@@ -1,0 +1,30 @@
+.product-drawer {
+	display: block;
+	opacity: 0;
+	transition: opacity 0.2s linear;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+.business-drawer {
+	display: block;
+	opacity: 0;
+	transition: opacity 0.2s linear;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+.resources-drawer {
+	display: block;
+	opacity: 0;
+	transition: opacity 0.2s linear;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
