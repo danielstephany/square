@@ -1,0 +1,118 @@
+.section-3 {
+	padding: 60px 0 50px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.section-title {
+	max-width: 322px;
+	margin: 0 auto 30px;
+	@media (min-width: 718px) {
+			max-width: 100%;
+		}
+	h3 {
+		color: #323232;
+		font-size: 22px;
+		font-weight: 300;
+		letter-spacing: 0.4px;
+		line-height: 30px;
+		margin: 0 0 20px;
+		@media (min-width: 718px) {
+			font-size: 28px;
+		}
+	}
+	p {
+		color: #888;
+		font-size: 14px;
+		font-weight: 300;
+		letter-spacing: 0.4px;
+		line-height: 16px;
+		margin: 0;
+	}
+}
+
+#options {
+	max-width: 322px;
+	@media (min-width: 718px) {
+			max-width: 100%;
+		}
+}
+
+.options {
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.2);
+	height: 320px;
+	padding: 30px;
+	margin: 0;
+	position: relative;
+	&:after {
+		display: block;
+		background: transparent;
+		border: 2px solid #2996cc;
+		border-radius: 4px;
+		content: '';
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		position: absolute;
+		opacity: 0;
+		z-index: 99;
+		transition: opacity 0.2s linear;
+	}
+	&:hover::after {
+		opacity: 1;
+	}
+	h4 {
+		color: #323232;
+		font-size: 14px;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+		margin: 0 0 10px;
+	}
+	p {
+		color: #888;
+		margin: 0 0 10px;
+		font-size: 14px;
+		font-weight: 300;
+	}
+	span {
+		color: #2996cc;
+		margin: 0 0 10px;
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 0.5px;
+	}
+}
+
+#stand {
+	order: 3;
+	@media (min-width: 718px) {
+		width: 100%;
+		order: -1
+	}
+	@media (min-width: 1024px) {
+		width: 33.3%;
+	}
+
+}
+
+.options-img-1,
+.options-img-2,
+.options-img-3 {
+	height: 180px;
+}
+
+.options-img-1 {
+	background-image: url(../img/section-3/stand-s.jpg);
+}
+
+.options-img-2 {
+	background-image: url(../img/section-3/contactless-s.jpg);
+}
+
+.options-img-3 {
+	background-image: url(../img/section-3/magstripe-s.jpg);
+}
+
+
+

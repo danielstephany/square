@@ -1,0 +1,97 @@
+.section-4 {
+	padding: 60px 0;
+}
+
+.get-started {
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 5px;
+	height: auto;
+	@media (min-width: 1292px){
+		min-height: 282px;
+	}
+	a {
+		position: relative;
+		height: 100%;
+		&:after {
+			display: block;
+			background: transparent;
+			border: 2px solid #2996cc;
+			border-radius: 4px;
+			content: '';
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			position: absolute;
+			opacity: 0;
+			z-index: 99;
+			transition: opacity 0.2s linear;
+		}
+		&:hover::after {
+			opacity: 1;
+		}
+		div {
+			&:last-of-type {
+				background-color: transparent;
+				display: block;
+				padding: 30px;
+				margin: 0;
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	h4 {
+		color: #323232;
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 0.4px;
+		line-height: 20px;
+		padding: 0;
+		margin: 0 0 10px;
+	}
+	p {
+		color: #888;
+		font-size: 14px;
+		font-weight: 300;
+		letter-spacing: 0.4px;
+		line-height: 20px;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.get-started-img {
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	display: block;
+	width: auto;
+	height: 150px;
+	position: relative;
+	z-index: 100;
+}
+
+.get-started-img-1 {
+	background-image: url(../img/section-4/start-s.jpg);
+	@media (min-width: 718px) {
+		background-image: url(../img/section-4/start-m.jpg);
+	}
+}
+
+.get-started-img-2 {
+	background-image: url(../img/section-4/run-s.jpg);
+	@media (min-width: 718px) {
+		background-image: url(../img/section-4/run-m.jpg);
+	}
+}
+
+.get-started-img-3 {
+	background-image: url(../img/section-4/grow-s.jpg);
+	@media (min-width: 718px) {
+		background-image: url(../img/section-4/grow-m.jpg);
+	}
+}
+
+
+

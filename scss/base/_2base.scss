@@ -34,6 +34,34 @@ html {
   font-family: Helvetica, sans-serif;
  }
 
+section {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.img,
+.img-2 {
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.img {
+  background-size: auto 100%;
+}
+
+.img-2 {
+  background-size: cover;
+}
+
+.clear:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
  .hide-when-small {
     display: none;
     @media (min-width: 1024px) {

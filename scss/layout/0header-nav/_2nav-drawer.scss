@@ -63,10 +63,9 @@
 	width: 100%;
 	height: auto;
 	position: absolute;
-	top: 37px;
+	top: 45px;
 	right: 0;
-	transition: top 0.2s linear;
-	transition: right 0.2s linear;
+	transition: all 0.2s linear;
 	@media (min-width: 718px) {
 		display: flex;
 		flex-wrap: wrap;

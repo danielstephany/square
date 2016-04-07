@@ -1,0 +1,120 @@
+.section-6 {
+	padding: 60px 0 50px;
+}
+
+.benifits,
+.benifits-2 {
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.2);
+	padding: 30px 20px;
+	margin: 0;
+	line-height: 20px;
+	position: relative;
+	transition: border 0.3s linear;
+	@media (min-width: 1024px){
+		flex-direction: row;
+		text-align: left;
+	}
+	div:first-of-type {
+		display: block;
+		padding: 0;
+		margin: 0 0 10px;
+	}
+	div:last-of-type {
+		display:  block;
+		padding: 0;
+		margin: 0 0 10px;
+		@media (min-width: 1024px){
+			margin-left: 10px;
+			padding: 0 10px;
+		}
+	}
+	h4 {
+		color: #000;
+		display: block;
+		font-size: 14px;
+		margin: 0;
+		padding: 0;
+	}
+	p {
+		color: #888;
+		display: block;
+		font-weight: 300;
+		font-size: 14px;
+		margin: 0 0 10px 0;;
+		padding: 0;
+	}
+		span {
+			display: inline;
+		color: #2996cc;
+		letter-spacing: 0.4px;
+		font-size: 14px;
+		&:after {
+			display: inline-block;
+			content: "";
+			height: 6px;
+			width: 6px;
+			font-size: 10px;
+			margin: 0 0 0 3px;
+			border-bottom: 1px solid #2996cc;
+			border-right: 1px solid #2996cc;
+			transform: rotate(-45deg);
+			position: relative;
+		}
+	}
+	&:after {
+			display: block;
+			background: transparent;
+			border: 2px solid #2996cc;
+			border-radius: 4px;
+			content: '';
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			position: absolute;
+			opacity: 0;
+			z-index: 99;
+			transition: opacity 0.2s linear;
+		}
+		&:hover::after {
+			opacity: 1;
+		}
+		&:hover {
+			border: 1px solid rgba(0,0,0,0.0);
+		}
+}
+
+.benifits {
+	height: 300px;
+	@media (min-width: 374px) {
+		height: 280px;
+	}
+	@media (min-width: 480px) {
+		height: 260px;
+	}
+	@media (min-width: 1024px){
+		height: 190px;
+	}
+	@media (min-width: 1292px){
+		height: 170px;
+	}
+}
+
+.benifits-2 {
+	height: 320px;
+	@media (min-width: 374px) {
+		height: 300px;
+	}
+	@media (min-width: 480px) {
+		height: 260px;
+	}
+	@media (min-width: 1024px){
+		height: 210px;
+	}
+	@media (min-width: 1292px){
+		height: 170px;
+	}
+}

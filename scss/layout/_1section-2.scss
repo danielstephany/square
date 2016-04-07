@@ -1,0 +1,91 @@
+.section-2 {
+	background-color: #fafafa;
+	padding: 20px 0 0;
+}
+ 
+ .getCovered,
+ .seeStories {
+ 	text-align: center;
+	h4 {
+		color: #2e3b4e;
+		display: block;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 20px;
+		max-width: 16em;
+		margin: 8px auto 0;
+		@media (min-width: 1024px) {
+			max-width: 100%;
+		}
+	}
+	a:last-of-type {
+		color: #2996cc;
+		font-size: 14px;
+		font-weight: 500;
+		letter-spacing: 0.8px;
+		position: relative;
+		&:after {
+			display: inline-block;
+			content: '';
+			background-color: transparent;
+			width: 6px;
+			height: 6px;
+			border-right: 1px solid;
+			border-bottom: 1px solid;
+			transform: rotate(-45deg);
+			position: absolute;
+			top: 5px;
+			right: -9px;
+		}
+	}
+}
+
+.get-covered-img,
+.see-stories-img {
+	border:  1px solid rgba(0,0,0,0.1);
+	border-radius: 5px;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	height: 160px;
+	position: relative;
+	&:after {
+		display: block;
+		background: transparent;
+		border: 2px solid rgba(0,0,0,0.2);
+		border-radius: 4px;
+		content: '';
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		position: absolute;
+		opacity: 0;
+		z-index: 99;
+		transition: opacity 0.2s linear;
+	}
+	&:hover::after {
+		opacity: 1;
+	}
+}
+
+.get-covered-img {
+	background-image: url(../img/section-2/campaign-promo-s.jpg);
+	@media (min-width: 1024px) {
+		background-image: url(../img/section-2/campaign-promo1-xl.jpg);
+		background-size: cover;
+	}
+}
+
+.see-stories-img {
+	background-image: url(../img/section-2/campaign-promo2.jpg);
+	@media (min-width: 1024px) {
+		background-image: url(../img/section-2/campaign-promo2-xl.jpg);
+		background-size: cover;
+	}
+}
+
+
+
+
+
